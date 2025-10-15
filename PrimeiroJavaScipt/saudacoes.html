@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~Saudações~</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>Bem vindo!</h1>
+        <p>Vamos testar o JS com seu nome?</p>
+        <div>
+            Meu nome é:
+            <p id="adicionar_nome"></p>
+        </div>
+
+        <input type="text" name="texto_nome" id="texto_nome">
+
+        <button onclick="fun_adicionar_nome()">Clica que vai!</button>
+    </div>
+    <script>
+        function fun_adicionar_nome(){
+            let nome = document.getElementById("texto_nome").value;
+            // alert(nome);
+            document.getElementById("adicionar_nome").textContent = nome;
+        }
+    </script>
+</body>
+</html>
