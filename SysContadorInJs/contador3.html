@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Cliques</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .div {
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Contador de cliques</h1>
+        <button id="btn_contador">Acrescentar</button>
+        <button id="zerar">Zerar Contador</button>
+        <button id="contador">Diminuir Contador</button>
+    </div>
+
+    <br>
+    <p id="clickButton">Cliques: 0</p>
+
+    <script>
+        let count = 0;
+
+        const botao = document.getElementById("btn_contador");
+        const diminuir_contador = document.getElementById("diminuir_contador");
+
+        botao.addEventListener("click", function () {
+            count++;
+            document.getElementById("clickButton").innerText = "Cliques: " + count;
+        });
+
+       const zerar = document.getElementById("zerar");
+       zerar.addEventListener("click", function(){
+        if(confirm("Quer realmente zerar?")){
+            count = 0;
+            document.getElementById("clickButton").innerText = "Cliques: " + count;
+        }
+       })
+
+
+        diminuir_contador.addEventListener("click", function () {
+            count--;
+            document.getElementById("clickButton").innerText = "Cliques: " + count;
+        });
+    </script>
+</body>
+</html>
+
+
