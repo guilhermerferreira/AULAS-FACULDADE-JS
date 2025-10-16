@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- html lang="en" -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blocos</title>
+</head>
+<body>
+    <style>
+        div{
+            width: 200px;
+            float: left;
+            margin: 2px;
+            text-align: center;
+            border: solid 1px gray;
+        }
+        .left{
+            background-color: brown;
+            color: white; 
+        }
+        .middle{
+            background-color: gray;
+        }
+        .right{
+            background-color: aqua;
+        }
+        @media screen and (max-width:600px) {
+            div{
+                width: 100%;
+            }   
+        }
+    </style>
+
+    <h2>Três Blocos</h2>
+    <p>Redimensionando os blocos ao atingir 800px</p>
+
+    <div class="left">
+        <p>Menu esquerdo</p>
+    </div>
+    <div class="middle">
+        <p>Menu do meio</p>
+    </div>
+     <div class="middle">
+        <p>Menu do meio</p>
+    </div>
+    <div class="right">
+        <p>Menu direito</p>
+    </div>
+</body>
+</html>
